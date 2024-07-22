@@ -1,0 +1,26 @@
+# CryptoFusion.py
+
+class CryptoFusion:
+    def __init__(self, platform_name, fusion_features):
+        self.platform_name = platform_name
+        self.fusion_features = fusion_features
+    
+    def display_platform_info(self):
+        print(f"Platform Name: {self.platform_name}")
+        print("Fusion Features:")
+        for feature in self.fusion_features:
+            print(f"- {feature}")
+
+# Example usage
+if __name__ == "__main__":
+    platform_name = "CryptoFusion"
+    fusion_features = [
+        "Aggregate cryptocurrency prices",
+        "Portfolio management",
+        "Crypto news aggregation",
+        "Market sentiment analysis",
+        "Price prediction models"
+    ]
+    
+    crypto_fusion = CryptoFusion(platform_name, fusion_features)
+    crypto_fusion.display_platform_info()
